@@ -87,6 +87,7 @@ div {
     border-width: 1px;
     border-color: rgb(98, 98, 98);
     border-style: solid;
+    background: none;
 }
 #loadmore {
     text-align: center;  
