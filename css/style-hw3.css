@@ -3,32 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+.body {
     width: 900px;
     margin: 0 auto;   
 }
 .navigation {
     list-style-type: none;
     text-align: center;
-    margin-top: 72px;
-    margin-bottom: 99px;
+    padding-top: 72px;
+    padding-bottom: 99px;
     /* 77-(24-14)/2=72 */
     /* 104-(24-14)/2=99 */
 }
 .navigation li {
     display: inline-block;
 }
-.lifestyle a {
-    margin-right: 120px;
+.navigation a:hover {
     color: rgb(3, 169, 244);
 }
+.lifestyle a {
+    padding-right: 140px;
+}
 .photodiary {
-    margin-right: 103px;
+    padding-right: 140px;
 }
 .music {
-    margin-right: 95px;
+    padding-right: 140px;
 }
-a { 
+.menu { 
     text-decoration: none;
     font-size: 14px;
     font-family: "Playfair Display";
@@ -37,14 +39,20 @@ a {
     line-height: 1.714;
 }
 .img {
-    margin-bottom: 27px;
+    padding-bottom: 27px;
+    margin-top: 0px;
 }
 .leftcolumn {
     margin-right: 56px;
+    margin-bottom: 135px;
 }
-div {
+.rightcolumn {
     width: 420px;
-    height: 533px;
+    margin-bottom: 135px;
+    display: inline-block;
+}
+.leftcolumn {
+    width: 420px;
     display: inline-block;
 }
 .under-photo{       
@@ -53,24 +61,21 @@ div {
     color: rgb(180, 173, 158);
     text-transform: uppercase;
     line-height: 1.2;
-    margin-bottom: 21px;     
+    padding-bottom: 21px;     
 }
 .head-of-article {
     font-size: 30px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
     line-height: 1.2;
-    margin-bottom: 26px;    
+    padding-bottom: 26px;   
+    white-space: nowrap;
 }
 .main-text {
-    height: 65px;
     font-size: 14px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
     line-height: 1.714;
-    overflow: hidden;
-    text-overflow: clip;
-    margin-bottom: 135px;
 }
 .lower {
     margin-bottom: 55px;
