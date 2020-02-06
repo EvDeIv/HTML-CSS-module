@@ -17,18 +17,13 @@
 }
 .navigation li {
     display: inline-block;
+    padding-right: 100px;
+}
+.navigation li:last-child {
+    padding-right: 0px;
 }
 .navigation a:hover {
     color: rgb(3, 169, 244);
-}
-.lifestyle a {
-    padding-right: 140px;
-}
-.photodiary {
-    padding-right: 140px;
-}
-.music {
-    padding-right: 140px;
 }
 .menu { 
     text-decoration: none;
@@ -51,7 +46,7 @@
 .main_block:nth-child(even) {
     margin-right: 0px;
 }
-.main_block:nth-last-child(-n+3) {
+div>.main_block:nth-last-child(-n+2) {
     margin-bottom: 55px;
 }
 .under-photo{       
@@ -77,7 +72,7 @@
     color: rgb(98, 98, 98);
     line-height: 1.714;
 }
-#button {    
+.loadmore>button {    
     font-size: 20px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
@@ -91,7 +86,7 @@
     border-style: solid;
     background: none;
 }
-#loadmore {
+.loadmore {
     text-align: center;  
     padding-bottom: 70px;  
 }
