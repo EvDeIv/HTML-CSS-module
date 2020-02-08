@@ -1,21 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .wrapper {
-    width: 400px;
-    margin: auto;
-    padding: 20px 15px 20px 25px;
-    color: #110000;
-  }
-  
-  .box {      
-    margin: 30px;
-    padding: 20px;
-    width: 120px;
-    height: 120px;
-    float: left;
-  }   
-  /* Фон абазца занимает всю доступную ширину родительского блока как если бы float элемента не было вовсе. */
-  .wrapper > p { background: #738351; }
-  
-  p {
-    text-align: justify;
-    text-indent: 1.5rem;
-  }
+  width: 1110px;
+  margin: 0 auto;
+}
+.menu {
+  padding-top: 15px;
+  margin-bottom: 110px;
+}
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.navigation {
+  float:right;
+  display: inline;
+  padding: 8px 0px;}
+.logo {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: #555252;
+  text-transform: uppercase;
+  line-height: 1.067;  
+  display: inline;
+  letter-spacing: -0.02em;
+}
+.logo:hover {
+  color: rgb(26, 188, 156);
+}
+.navigation>li {
+  display: inline;
+  list-style: none;
+}
+.navigation>li:not(:last-child) {
+  margin-right: 35px;
+}
+li>a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(1, 1, 1);
+  font-weight: bold;
+  text-transform: uppercase;  
+  padding-top: 10px;
+  letter-spacing: -0.02em;
+}
+li>a:hover {
+  color: rgb(26, 188, 156);
+}
+h1 {
+  margin: 0;
+  font-size: 48px;
+  font-family: "Roboto";
+  color: rgb(81, 81, 81);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+.products {
+  width: 255px;
+  height: 325px;
+  float: left;
+}
+.price {
+  float: right;
+  display: inline;
+}
+.product_name {
+  display: inline;
+}
+.product_photo {
+  height: 282px;
+  width: 255px;
+  background-color: coral;
+}
+img {
+  background-color: chartreuse;
+  object-fit: cover;
+}
