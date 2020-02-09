@@ -18,18 +18,17 @@
 }
 .navigation {
   float:right;
-  display: inline;
-  padding: 8px 0px;}
+  padding: 6px 0px;}
 .logo {
+  float: left;
   font-size: 30px;
   font-family: "Roboto";
   color: #555252;
   text-transform: uppercase;
   line-height: 1.067;  
-  display: inline;
   letter-spacing: -0.02em;
 }
-.logo:hover {
+.logo::first-letter {
   color: rgb(26, 188, 156);
 }
 .navigation>li {
@@ -51,34 +50,159 @@ li>a {
 }
 li>a:hover {
   color: rgb(26, 188, 156);
+
 }
-h1 {
+.fphead {
   margin: 0;
   font-size: 48px;
   font-family: "Roboto";
   color: rgb(81, 81, 81);
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 0.7;
   text-align: center;
+  letter-spacing: -0.02em;
+}
+.fphead:after {
+  display: block;
+  content: '';
+  width: 165px;
+  height: 8px;
+  background-color: rgb(26, 188, 156);
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 92px;
 }
 .products {
   width: 255px;
   height: 325px;
   float: left;
+  background-color: rgb(50, 50, 50);
+}
+.products:hover{
+  display: block;
+  background-color: rgb(26, 188, 156);
 }
 .price {
   float: right;
-  display: inline;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.439);
+  width: 55px;
+  height: 40px;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.778;
+  text-align: center;
+  padding-top: 6px;
+  letter-spacing: -0.02em;
 }
 .product_name {
-  display: inline;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.778;
+  text-align: left;
+  width: 200px;
+  height: 40px;
+  padding-top: 6px;
+  padding-left: 14px;
+  letter-spacing: -0.02em;
 }
 .product_photo {
-  height: 282px;
+  display: block;
+  height: 285px;
   width: 255px;
-  background-color: coral;
-}
-img {
-  background-color: chartreuse;
+  background-color: rgb(233, 240, 253);
   object-fit: cover;
 }
+.products:not(:nth-child(4n+4)) {
+  margin-right: 30px;
+}
+.products:not(:nth-last-child(-n+4)) {
+  margin-bottom: 30px;
+}
+.products:nth-last-child(-n+4) {
+margin-bottom: 100px;
+}
+.latnewshead {
+  font-size: 48px;
+  font-family: "Roboto";
+  color: rgb(85, 82, 82);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.latnewshead:after {
+  display: block;
+  content: '';
+  width: 165px;
+  height: 8px;
+  background-color: rgb(26, 188, 156);
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 84px;
+}
+.news_block {
+  width: 350px;
+  height: 364px;
+  float: left;
+}
+.news_block:not(:last-child) {
+  margin-right: 30px;
+}
+.newshead {
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(85, 82, 82);
+  line-height: 1.444;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  margin-top: 6px;
+}
+.newshead::after {
+  display: block;
+  content: '';
+  background-color: rgb(26, 188, 156);
+  width: 138px;
+  height: 3px;
+  margin-top: 9px;
+  margin-bottom: 24px;
+}
+.new {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(85, 82, 82);
+  line-height: 1.857;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+/* .toread {
+  width: 160px;
+  height: 50px;
+  background-color: #4ec6ab;
+  text-decoration: none;
+  border: 1px #4ec6ab solid;
+  border-radius: 3px 3px 3px 3px;
+} */
+.btext {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.625;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  text-align: center;  
+  padding-top: 10px;
+  width: 160px;
+  height: 50px;
+  background-color: #4ec6ab;
+  text-decoration: none;
+  border: 1px #4ec6ab solid;
+  border-radius: 3px 3px 3px 3px;
+}
+
