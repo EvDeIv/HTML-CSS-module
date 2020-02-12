@@ -20,6 +20,7 @@
   float:right;
   padding: 6px 0px;}
 .logo {
+  text-decoration: none;
   float: left;
   font-size: 30px;
   font-family: "Roboto";
@@ -68,13 +69,14 @@ li>a:hover {
   width: 165px;
   height: 8px;
   background-color: rgb(26, 188, 156);
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 32px;
   margin-bottom: 92px;
 }
 .products {
   width: 255px;
-  height: 325px;
+  height: 322px;
   float: left;
   background-color: rgb(50, 50, 50);
 }
@@ -98,6 +100,12 @@ li>a:hover {
   letter-spacing: -0.02em;
 }
 .product_name {
+  height: 40px;
+  width: 200px;
+  display: inline-block;
+}
+.product_name>a {
+  float: left;
   display: inline-block;
   font-size: 18px;
   font-family: "Roboto";
@@ -110,11 +118,10 @@ li>a:hover {
   padding-top: 6px;
   padding-left: 14px;
   letter-spacing: -0.02em;
+  text-decoration: none;
 }
 .product_photo {
   display: block;
-  height: 285px;
-  width: 255px;
   background-color: rgb(233, 240, 253);
   object-fit: cover;
 }
@@ -148,7 +155,6 @@ margin-bottom: 100px;
 }
 .news_block {
   width: 350px;
-  height: 364px;
   float: left;
 }
 .news_block:not(:last-child) {
