@@ -163,7 +163,7 @@ li>a:hover {
     width: 200px;
     height: 40px;
     float: left;
-    padding-top: 8px;
+    padding-top: 5px;
     padding-left: 14px;
 }
 .product_name>a {
@@ -187,7 +187,7 @@ li>a:hover {
     line-height: 1.778;
     text-align: center;
     font-weight: bold;
-    padding-top: 8px;
+    padding-top: 5px;
 }
 div>a {
     display: block;
