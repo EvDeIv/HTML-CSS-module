@@ -9,7 +9,7 @@
 }
 .menu {
   padding-top: 15px;
-  margin-bottom: 110px;
+  padding-bottom: 110px;
 }
 .clearfix:after {
   display: table;
@@ -31,6 +31,7 @@
 }
 .logo::first-letter {
   color: rgb(26, 188, 156);
+  font-weight: 700;
 }
 .navigation>li {
   display: inline;
@@ -51,9 +52,9 @@ li>a {
 }
 li>a:hover {
   color: rgb(26, 188, 156);
-
 }
 .fphead {
+  font-weight: 700;
   margin: 0;
   font-size: 48px;
   font-family: "Roboto";
@@ -76,7 +77,6 @@ li>a:hover {
 }
 .products {
   width: 255px;
-  height: 322px;
   float: left;
   background-color: rgb(50, 50, 50);
 }
@@ -102,10 +102,9 @@ li>a:hover {
 .product_name {
   height: 40px;
   width: 200px;
-  display: inline-block;
+  float: left;
 }
 .product_name>a {
-  float: left;
   display: inline-block;
   font-size: 18px;
   font-family: "Roboto";
@@ -114,7 +113,8 @@ li>a:hover {
   line-height: 1.778;
   text-align: left;
   width: 200px;
-  height: 40px;
+  /* height: 40px; */
+  line-height: 30px;
   padding-top: 6px;
   padding-left: 14px;
   letter-spacing: -0.02em;
@@ -135,6 +135,7 @@ li>a:hover {
 margin-bottom: 100px;
 }
 .latnewshead {
+  font-weight: 700;
   font-size: 48px;
   font-family: "Roboto";
   color: rgb(85, 82, 82);
