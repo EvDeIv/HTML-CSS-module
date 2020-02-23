@@ -100,7 +100,7 @@ a {
     padding-bottom: 95px;
 }
 .about-us li:nth-last-child(-n+3) {
-    padding-bottom: 85px;
+    padding-bottom: 10px;
 }
 ul>.services::before {
     display: block;
@@ -147,7 +147,7 @@ ul>.services:nth-child(6)::before {
     text-align: left;
     font-weight: 400;
 }
-.about-us p {
+.about-us>p {
     width: 950px;
     margin: 0 auto;
     font-size: 15px;
@@ -184,6 +184,11 @@ ul>.services:nth-child(6)::before {
     height: 56px;
     margin: 1px;
 }
+.reference>a:hover {
+    background-color: #95e1d3;
+    transition: background-color .2s linear;
+
+}
 .facebook {
     background-image: url(../images/hw-06/facebook.png);
 }
@@ -213,11 +218,12 @@ ul>.services:nth-child(6)::before {
 }
 .image:hover {
     transform: translate(-10px, -10px);
-    box-shadow: 10px 10px 0 rgb(149, 225, 211);
-    transition: transform,box-shadow .2s linear;
+    transition:  transform .2s linear;
 }
 .image:hover::before {
     opacity: 1;
+    box-shadow: 10px 10px 0 rgb(149, 225, 211);
+    transition: box-shadow .2s linear;
 }
 .image:hover .reference {
     opacity: 1;
