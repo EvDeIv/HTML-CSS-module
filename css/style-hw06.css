@@ -13,7 +13,6 @@
     align-items: center;
 }
 .navigation li {
-    min-width: 98px;
     list-style: none;
 }
 .navigation>ul {
