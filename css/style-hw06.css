@@ -230,6 +230,7 @@ ul>.services:nth-child(6)::before {
 }
 .image:hover .reference {
     opacity: 1;
+    transition: opacity .2s linear;
 }
 .name {
     font-size: 14px;
