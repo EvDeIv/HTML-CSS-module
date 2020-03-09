@@ -183,6 +183,7 @@
     padding-bottom: 15px;
 }
 .partner>p {
+    width: 200px;
     font-size: 14px;
     font-family: "Roboto";
     color: rgb(102, 102, 102);
@@ -215,7 +216,7 @@
         margin-bottom: 135px;
     }
     .log-buttons {
-        margin: 0 auto;
+        margin: 0;
     }
     .logo {
         margin-bottom: 0px;
@@ -245,41 +246,40 @@
         width: 490px;
     }
     .partner {
-        width: 235px;
-        padding-bottom: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-    }
-    .partner>img {
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 15px;
-    }
-    .partner>h3, .partner>p {
-        text-align: center;
-    }
-    .partner>h3 {
-        font-size: 14px;
-        font-family: "Montserrat";
-        color: rgb(51, 51, 51);
-        font-weight: bold;
-        line-height: 1.2;
-        padding-bottom: 15px;
-    }
-    .partner>p {
-        font-size: 14px;
-        font-family: "Roboto";
-        color: rgb(102, 102, 102);
-        line-height: 1.2;
-        font-weight: 300;
+        width: 220px;
     }
     .bottom {
-        color: rgb(255, 78, 80);
-        background-color: #fff;
-        border: 2px solid #ff4e50;
-        line-height: 36px;
-        margin-bottom: 57px;
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 40px;
     }
-    
+    .partner:nth-child(2) {
+        order: 2;
+    }
+    .partner:nth-child(4) {
+        order: 3;
+    }
+}
+@media (min-width: 1440px) {
+    .viewport {
+        width: 940px;
+    }
+    .underlay {
+        background-image: url(../images/hw-08/Vector\ Smart\ Object\ 3.png);
+    }
+    .head-of-section {
+        width: 520px;
+    }
+    .container>p {
+        width: 940px;
+    }
+    .head-of-partners {
+        width: 940px;
+    }
+    .some-partners {
+        width: 940px;
+    }
+    .bottom {
+        margin-bottom: 75px;
+    }
 }
