@@ -4,104 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style-hw06.css">
+    <link rel="stylesheet" href="../css/style-hw10.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CMontserrat:400,500,700%7CRoboto:300i,400&display=swap&subset=cyrillic,cyrillic-ext">
     <title>Document</title>
 </head>
 <body>
-    <header  class="header">
-        <a class="logo" href="#">MoGo</a>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#"></a>abuot</li>
-                <li><a href="#"></a>service</li>
-                <li><a href="#"></a>work</li>
-                <li><a href="#"></a>blog</li>
-                <li><a href="#"></a>contact</li>
-            </ul>    
-        </nav>
-    </header>
+    <section class="overlay">
+        <header class="header">
+            <a class="logo link" href="#">MoGo</a>
+            <nav class="nav">
+                <a class="nav__item nav__item--hover nav__item--after link" href="#">abuot</a>
+                <a class="nav__item nav__item--hover nav__item--after link" href="#">service</a>
+                <a class="nav__item nav__item--hover nav__item--after link" href="#">work</a>
+                <a class="nav__item nav__item--hover nav__item--after link" href="#">blog</a>
+                <a class="nav__item nav__item--hover nav__item--after link" href="#">contact</a>
+                <button class="nav__button">
+                    <svg class="nav__svg">
+                        <use href="../images/hw-06/sprite.svg#basket"></use>
+                    </svg>
+                </button>
+                <button class="nav__button">
+                    <svg class="nav__svg">
+                        <use href="../images/hw-06/sprite.svg#search"></use>
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <h2 class="main-head overlay__main-head"><span class="main-head__first-type">Creative Template</span>WELCOME TO MOGO</h2>
+        <button class="learn-more">LEARN MORE</button>
+    </section>
     <main>
         <section class="container">
-            <h2 class="head-of-section"><span>We work with</span>AMAZING SERVICES</h2>
-            <ul>
-                <li class="services">
-                    <h3>Photography</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+            <h2 class="head-of-section head-of-section--after"><span class="head-of-section__first-type">We work with</span>AMAZING SERVICES</h2>
+            <ul class="services-list">
+                <li class="services services--before">
+                    <h3 class="services__head">Photography</h3>
+                    <p class="services__text">Lorem ipsum dolor sit amet.</p>
                 </li>
-                <li class="services">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <li class="services services--before">
+                    <h3 class="services__head">Web Design</h3>
+                    <p class="services__text">Lorem ipsum dolor sit amet.</p>
                 </li>
-                <li class="services">
-                    <h3>Creativity</h3>
-                     <p>Lorem ipsum dolor sit amet.</p>
+                <li class="services services--before">
+                    <h3 class="services__head">Creativity</h3>
+                    <p class="services__text">Lorem ipsum dolor sit amet.</p>
                 </li>
-                <li class="services">
-                    <h3>seo</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <li class="services services--before">
+                    <h3 class="services__head">seo</h3>
+                    <p class="services__text">Lorem ipsum dolor sit amet.</p>
                 </li>
-                <li class="services">
-                    <h3>Css/Html</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <li class="services services--before">
+                    <h3 class="services__head">Css/Html</h3>
+                    <p class="services__text">Lorem ipsum dolor sit amet.</p>
                 </li>
-                <li class="services">
-                    <h3>digital</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <li class="services services--before">
+                    <h3 class="services__head">digital</h3>
+                    <p class="services__text">Lorem ipsum dolor sit amet.</p>
                 </li>
             </ul>
         </section>
         <section class="container">
-            <h2 class="head-of-section"><span>We we are</span>MEET OUR TEAM</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nostrum optio sint ut fuga fugit nesciunt blanditiis sapiente qui sit!</p>
-            <div class="container-for-flex">
+            <h2 class="head-of-section head-of-section--after"><span class="head-of-section__first-type">We we are</span>MEET OUR TEAM</h2>
+            <p class="container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nostrum optio sint ut fuga fugit nesciunt blanditiis sapiente qui sit!</p>
+            <div class="container-for-cards">
                 <div class="card">
-                    <div class="image">
-                        <img src="../images/hw-06/1guy.jpg" alt="somebody" class="photo">
-                        <div class="reference">
-                            <a class="facebook" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="pinterest" href="#"></a>
-                            <a class="instagram" href="#"></a>
+                    <div class="card__image card__image--before card__image--hover card__image--hover-before card__socials--hov-tranz">
+                        <img class="card__img" srcset="../images/hw-06/1guy.jpg 380w, ../images/hw-06/1guy@2x.jpg 760w" sizes="380px" src="../images/hw-06/1guy.jpg" alt="somebody" class="photo" height="470">
+                        <div class="socials">
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <span class="name">Matthew Dix</span>
-                    <span class="job">Graphic Design</span>
+                    <span class="card__name">Matthew Dix</span>
+                    <span class="card__job">Graphic Design</span>
                 </div>
                 <div class="card">
-                    <div class="image">
-                        <img src="../images/hw-06/2guy.png" alt="somebody" class="photo">
-                        <div class="reference">
-                            <a class="facebook" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="pinterest" href="#"></a>
-                            <a class="instagram" href="#"></a>
+                    <div class="card__image card__image--before card__image--hover card__image--hover-before card__socials--hov-tranz">
+                        <img class="card__img" srcset="../images/hw-06/2guy.jpg 380w, ../images/hw-06/2guy@2x.jpg 760w" sizes="380px" src="../images/hw-06/2guy.jpg" alt="somebody" class="photo" height="470">
+                        <div class="socials">
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <span class="name">Christopher Campbell</span>
-                    <span class="job">Branding/UX design</span>
+                    <span class="card__name">Matthew Dix</span>
+                    <span class="card__job">Graphic Design</span>
                 </div>
                 <div class="card">
-                    <div class="image">
-                        <img src="../images/hw-06/3guy.png" alt="somebody" class="photo">
-                        <div class="reference">
-                            <a class="facebook" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="pinterest" href="#"></a>
-                            <a class="instagram" href="#"></a>
+                    <div class="card__image card__image--before card__image--hover card__image--hover-before card__socials--hov-tranz">
+                        <img class="card__img" srcset="../images/hw-06/3guy.jpg 380w, ../images/hw-06/3guy@2x.jpg 760w" sizes="380px" src="../images/hw-06/3guy.jpg" alt="somebody" class="photo" height="470">
+                        <div class="socials">
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="socials__items socials__items--hover" href="#">
+                                <svg class="socials__svg">
+                                    <use href="../images/hw-06/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <span class="name">Michael Fertig </span>
-                    <span class="job">Developer</span>
-                </div>    
+                    <span class="card__name">Matthew Dix</span>
+                    <span class="card__job">Graphic Design</span>
+                </div>
             </div>
         </section>
         <footer class="container">
-            <div class="footer">
-              <p class="footer_text">© 2016 MoGo free PSD template by <a class="footer_link" href="#">Laaqiq</a></p>
+            <div class="footer footer--before">
+              <p class="footer__text">© 2016 MoGo free PSD template by <a class="footer__link" href="#">Laaqiq</a></p>
                 <form action="#">                  
-                  <input class="form" placeholder="Your Email...">
-                  <input class="knob" type="submit" value="subscribe">
+                  <input class="footer__form footer__form--placeholder" placeholder="Your Email...">
+                  <input class="footer__knob" type="submit" value="subscribe">
                 </form>
             </div>
         </footer>
