@@ -1,0 +1,54 @@
+.nav {
+    @extend %flex-r-sb-bl;
+    min-width: 620px; 
+    width: 100px;
+    &__item {
+        @include fonts(14px , $montserrat , map-get($colors, justwhite) , 1.2 , uppercase , 500);
+        &--hover:hover {
+            color: map-get($colors, someyellow);
+            transition: color .2s linear;
+        }
+        &--after::after {
+            @extend %pseudoblock;
+            width: 100%;
+            height: 3px;
+            background-color: map-get($colors, someyellow);
+            margin-top: 7px;
+            opacity: 0;
+            @extend %nav-after-animation;
+            &::after {
+                opacity: 1;
+                }
+            }
+        &--after:hover::after {
+            opacity: 1;  
+        }
+    }
+    &__button {
+        background-color: transparent;
+        border: none;
+        width: 20px;
+        height: 20px;
+        fill: map-get($colors, justwhite);
+        &--hover:hover {
+            fill: map-get($colors, someyellow);
+            transition: fill .2s linear;
+            &::after {
+                opacity: 1;
+            }
+        }
+        &--after::after {
+            @extend %pseudoblock;
+            width: 100%;
+            height: 3px;
+            background-color: map-get($colors, someyellow);
+            margin-top: 7px;
+            opacity: 0;
+            @extend %nav-after-animation;
+        }
+    }
+    &__svg {
+        width: 100%;
+        height: 100%;
+    }
+}

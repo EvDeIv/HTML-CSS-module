@@ -1,0 +1,24 @@
+.head-of-section {
+    @include fonts(30px , $montserrat , map-get($colors, somegray) , 1.2 , uppercase , bold);
+    text-align: center;
+    &--after::after{
+        @extend %pseudoblock;
+        background-color: map-get($colors, somecoral);
+        width: 60px;
+        height: 3px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    &__first-type {
+        @include fonts(24px , $kaushanscript , map-get($colors, somegray) , 1.2 , none , bold);
+        font-size: 24px;
+        font-family: "Kaushan Script";
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+        text-align: center;
+        display: block;
+        padding-bottom: 15px;
+        padding-top: 75px;
+    }
+}

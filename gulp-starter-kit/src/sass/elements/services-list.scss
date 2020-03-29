@@ -1,0 +1,49 @@
+.services-list {
+    @extend %flex--sa--;
+    flex-wrap: wrap;
+}
+.services{
+    position: relative;
+    width: 383px;
+    list-style: none;
+    padding-left: 83px;
+    padding-bottom: 95px;
+    &:nth-last-child(-n+3) {
+        padding-bottom: 10px;
+    }
+    &--before::before {
+        @extend %pseudoblock;
+        width: 80px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center 0px;
+    }
+    &:nth-child(1)::before {
+        background-image: url(../images/1.png);
+    }
+    &:nth-child(2)::before {
+        background-image: url(../images/2.png);
+    }
+    &:nth-child(3)::before {
+        background-image: url(../images/3.png);
+    }
+    &:nth-child(4)::before {
+        background-image: url(../images/4.png);
+    }
+    &:nth-child(5)::before {
+        background-image: url(../images/5.png);
+    }
+    &:nth-child(6)::before {
+        background-image: url(../images/6.png);
+    }
+    &__head {
+        @include fonts(14px , $montserrat , map-get($colors, somegray) , 1.2 , uppercase , 400);
+        padding-bottom: 10px;
+    }
+    &__text {
+        @include fonts(16px , $roboto , map-get($colors, somewhite) , 1.6 , none , 400);
+        text-align: left;
+    }
+}

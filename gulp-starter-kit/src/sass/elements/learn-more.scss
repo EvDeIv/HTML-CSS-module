@@ -1,0 +1,7 @@
+.learn-more {
+    width: 154px;
+    height: 34px;
+    background-color: transparent;
+    border: solid 3px #ffffff;
+    @include fonts(14px , $montserrat , map-get($colors, justwhite) , 1.2 , uppercase , bold);
+}

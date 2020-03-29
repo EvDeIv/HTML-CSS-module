@@ -2,5 +2,24 @@
  * Все паршалы импортировать в этот файл
  */
 
+
+@import '../sass/variables.scss';
+@import '../sass/placeholders.scss';
+@import 'mixins.scss';
+@import 'elements/colors.scss';
 @import 'normalize.scss';
 @import 'base.scss';
+
+
+// COMPONENTS
+@import 'elements/container.scss';
+@import 'elements/overlay.scss';
+@import 'elements/header.scss';
+@import 'elements/nav.scss';
+@import 'elements/logo.scss';
+@import 'elements/main-head.scss';
+@import 'elements/learn-more.scss';
+@import 'elements/head-of-section.scss';
+@import 'elements/services-list.scss';
+@import 'elements/card.scss';
+@import 'elements/footer.scss';

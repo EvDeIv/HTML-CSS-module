@@ -1,0 +1,11 @@
+.overlay {
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient( map-get($colors, first-of-gradient) 0%, map-get($colors, second-of-gradient) 100%), url(../images/gus.jpg);
+    @extend %flex-c--c;
+    &__main-head {
+        padding-top: 160px;
+        padding-bottom: 110px;
+    }
+}

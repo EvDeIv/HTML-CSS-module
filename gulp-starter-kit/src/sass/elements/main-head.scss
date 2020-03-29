@@ -1,0 +1,10 @@
+.main-head {
+    width: 850px;
+    @include fonts(150px , $montserrat , map-get($colors, justwhite) , 0.9 , uppercase , bold);
+    text-align: center;
+    margin: 0 auto;
+    &__first-type {
+        display: block;
+        @include fonts(72px , $kaushanscript , map-get($colors, justwhite) , 1.2 , none , 400);
+    }
+}

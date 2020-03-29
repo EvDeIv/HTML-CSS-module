@@ -1,0 +1,8 @@
+@mixin fonts($size: 14px, $family: "Montserrat", $color: #ffffff, $line-height: 1.2, $text-transform: none, $weight: 400) {
+    font-size: $size;
+    font-family: $family;
+    text-transform: $text-transform;
+    line-height: $line-height;
+    font-weight: $weight;
+    color: $color;
+}

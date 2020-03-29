@@ -1,0 +1,39 @@
+%container {
+    width: 1200px;
+    margin: 0 auto;
+}
+%flex-r-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex-r-sb-bl {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+%flex-r-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-c--c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+%flex--sa-- {
+    display: flex;
+    justify-content: space-around;
+}
+%pseudoblock {
+    display: block;
+    content: '';
+}
+%nav-after-animation {
+    transition: opacity .2s linear;
+}
+%svgsizing {
+    width: 100%;
+    height: 100%;
+}

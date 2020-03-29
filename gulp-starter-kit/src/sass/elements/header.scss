@@ -1,0 +1,5 @@
+.header {
+    @extend %container;
+    @extend %flex-r-sb-c;
+    min-height: 100px;
+}

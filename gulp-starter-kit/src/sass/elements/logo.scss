@@ -1,0 +1,3 @@
+.logo {
+    @include fonts(30px , $montserrat , map-get($colors, justwhite) , 1.2 , uppercase , bold);
+}

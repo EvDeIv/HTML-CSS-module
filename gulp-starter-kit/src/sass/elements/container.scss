@@ -1,0 +1,13 @@
+.container {
+    @extend %container;
+    &__text {
+      width: 950px;
+      margin: 0 auto;
+      @include fonts(15px , $roboto , map-get($colors, somewhite) , 1.6 , none , 400);
+      text-align: center;
+      padding-bottom: 90px;
+    }
+    &-for-cards {
+      @extend %flex-r-sb-c;
+    }
+  }
